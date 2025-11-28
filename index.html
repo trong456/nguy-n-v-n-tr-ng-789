@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kết nối hướng dẫn viên Việt Nam</title>
+<style>
+body{margin:0;font-family:sans-serif;background:linear-gradient(135deg,#E3FDFD,#FFEFD5);color:#333}
+h1,h2{color:#0A6E4F;text-align:center}
+nav{background:#0A6E4F;padding:0}
+nav a{display:inline-block;color:#fff;text-decoration:none;padding:16px 20px;font-weight:bold;font-size:18px;}
+nav a.active, nav a:hover{background:#085a3e;color:#FFEFD5;border-radius:8px;}
+section{padding:40px 20px;max-width:900px;margin:auto;display:none;animation:fade 0.3s ease;}
+section:target{display:block;}
+body:not(:target) #home{display:block;}
+@keyframes fade{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+.hero{background:url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80')center/cover no-repeat;color:#fff;text-align:center;padding:80px 20px;background-color:rgba(0,0,0,0.4);background-blend-mode:overlay}
+section{padding:40px 20px;max-width:900px;margin:auto;display:none;}
+section.active{display:block;}
+.search-box{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+.search-box input,.search-box select{flex:1;padding:10px;border:1px solid #ccc;border-radius:8px}
+button{background:#0A6E4F;color:#fff;border:none;padding:10px 20px;border-radius:8px;cursor:pointer}
+button:hover{background:#085a3e}
+.card-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
+.card{background:#fff;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);overflow:hidden;text-align:center;padding:15px}
+.card img{width:100%;height:200px;object-fit:cover;border-radius:8px}
+.profile{display:flex;flex-wrap:wrap;gap:20px;align-items:center;background:#fff;padding:20px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
+.profile img{width:160px;height:160px;object-fit:cover;border-radius:10px}
+.tour-form{display:flex;flex-direction:column;gap:15px;background:#fff;padding:20px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
+.tour-form input,.tour-form textarea{padding:10px;border:1px solid #ccc;border-radius:8px;font-family:sans-serif}
+.review-form{display:flex;flex-direction:column;gap:15px;background:#fff;padding:20px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);max-width:900px;margin:30px auto}
+.review-form input,.review-form textarea{padding:10px;border:1px solid #ccc;border-radius:8px;font-family:sans-serif}
+.rating{display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:5px}
+.rating input{display:none}
+.rating label{font-size:30px;color:#ddd;cursor:pointer}
+.rating input:checked ~ label,.rating label:hover,.rating label:hover ~ label{color:#FFD700}
+footer{text-align:center;padding:30px 20px;background:#0A6E4F;color:#fff;margin-top:40px}
+footer p{margin:5px 0}
+footer a{color:#FFEFD5;text-decoration:none}
+footer a:hover{text-decoration:underline}
+@media(max-width:600px){.profile{flex-direction:column;text-align:center}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="#home" class="active">Trang chủ</a>
+  <a href="#guides">Hồ sơ hướng dẫn viên</a>
+  <a href="#tour">Tour cá nhân</a>
+  <a href="#review">Đánh giá sau tour</a>
+</nav>
+
+<section id="home" class="active">
+  <div class="hero">
+    <h1>Khám phá Việt Nam cùng hướng dẫn viên địa phương</h1>
+    <p>Trải nghiệm chân thật – Kết nối văn hóa – Tour riêng cho bạn</p>
+  </div>
+  <h2>Tìm hướng dẫn viên</h2>
+  <div class="search-box">
+    <input type="text" placeholder="Nhập địa điểm...">
+    <select><option>Ngôn ngữ</option><option>Tiếng Việt</option><option>Tiếng Anh</option></select>
+    <button>Tìm kiếm</button>
+  </div>
+  <div class="card-list">
+    <div class="card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.ZyXjRGNR23xsZh-nR8iKNAHaE8?pid=Api&P=0&h=180" alt="Hà Nội">
+      <h3>Nguyễn Minh – Hà Nội</h3>
+      <p>Ngôn ngữ: Việt, Anh, Trung</p>
+      <p>⭐ 4.9 / 5</p>
+    </div>
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.vUE88-YCRrVRLTw_dO0UjAHaEg?pid=Api&P=0&h=180" alt="Bắc ninh">
+      <h3>Lê Thảo – Bắc ninh</h3>
+      <p>Ngôn ngữ: Việt,Anh, Pháp</p>
+      <p>⭐ 4.7 / 5</p>
+    </div>
+  </div>
+   <div class="card-list">
+    <div class="card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.q4zod-1D_WdqmPLpR7m61AHaE7?pid=Api&P=0&h=180" alt="lạng sơn">
+      <h3>Nguyễn Nhật – lạng sơn </h3>
+      <p>Ngôn ngữ: Việt, Anh,</p>
+      <p>⭐ 4.9 / 5</p>
+    </div>
+     <div class="card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.Ykikz_9f04c2B3st4xkWwgHaHa?pid=Api&P=0&h=180" alt="Đà Lạt">
+      <h3>Lê Hiếu – Đà Lạt</h3>
+      <p>Ngôn ngữ: Việt,Anh,Trung</p>
+      <p>⭐ 4.7 / 5</p>
+    </div>
+    </div> <div class="card-list">
+    <div class="card">
+      <img src="https://tse5.mm.bing.net/th/id/OIP.aoq2c3ADhvNQ-GJ6g4RFXgHaEK?pid=Api&P=0&h=180" alt="Hà Nội">
+      <h3>Nguyễn Tuấn– Hà Nội</h3>
+      <p>Ngôn ngữ: Việt,Trung , Anh</p>
+      <p>⭐ 4.9 / 5</p>
+    </div>
+     <div class="card">
+      <img src="https://tse6.mm.bing.net/th/id/OIP.rAq_AkV-R93oFdg9VrzQ3AHaFj?pid=Api&P=0&h=180" alt="Cần Thơ">
+      <h3>nguyễn Mai – cần thơ</h3>
+      <p>Ngôn ngữ: Việt,Anh,</p>
+      <p>⭐ 4.7 / 5</p>
+    </div>
+</section>
+
+<section id="guides">
+  <h2>Hồ sơ hướng dẫn viên nổi bật</h2>
+  <div class="profile">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.sWqfDpfAYDD1MsMXj0e36AHaE8?pid=Api&P=0&h=180" alt="Hướng dẫn viên 1">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.PE47YSpRERmaZsCxE6-mWgHaE8?pid=Api&P=0&h=180" alt="Hinh ảnh ẩm thực ">
+    <img src="https://tse5.mm.bing.net/th/id/OIP.Nge8-LwyBxdXqIdQvyyExgHaGl?pid=Api&P=0&h=180" alt="HÌnh ảnh di tích lịch sử">
+    <img src="https://tse6.mm.bing.net/th/id/OIP.LUiwKVCbldNxyyoBMr2LrwHaF7?pid=Api&P=0&h=180" alt="Hình ảnh các di tích lich sử">
+    <img src="https://i0.wp.com/dulichthanhhoa.org/wp-content/uploads/2023/06/toan-canh-lam-kinh-2-16633805964202040011543.jpg?ssl=1" alt="Hình ảnh di tich lich sử">
+    <img src="https://tse7.mm.bing.net/th/id/OIP.sp0X5n02DmtqhdVrvhdzpQHaEK?pid=Api&P=0&h=180" alt="HÌnh ảnh chùa 1 cột">
+    <img src="https://tse8.mm.bing.net/th/id/OIP.kiZXCQVR9C6ECUoSkyHqTQHaE8?pid=Api&P=0&h=180" alt="Hình ảnh di tich lich sử">
+    <img src="https://toquoc.mediacdn.vn/2018/11/14/photo-1-15422039713451571019648.jpeg" alt="Hình ảnh văn miếu quốc tử giám">
+    <img src="https://tse9.mm.bing.net/th/id/OIP.BYC4KoUzZYmbYS7T8N-tqgHaE7?pid=Api&P=0&h=180" alt="Hình ảnh khu di tích cọc bạch đằng giang ">
+    <img src="https://willgo.vn/wp-content/uploads/2022/11/cong-chua-tay-thien-vinh-phuc.jpg"alt="Hình ảnh khu du lich tây thiên">
+    <img src="https://vietnamembassy-mongolia.org/wp-content/uploads/2019/10/Khu-du-l%E1%BB%8Bch-sinh-th%C3%A1i-hang-%C4%91%E1%BB%99ng-Tr%C3%A0ng-An-1.jpg" alt="Hình ảnh khu du lich bái đính tràng an">
+    <img src="https://www.chudu24.com/wp-content/uploads/2018/06/ha-long-1.jpg" alt="Hình ảnh khu du lich hà long ">
+  </div>
+  <div style="margin-top:20px">
+    <h3>Nguyễn Thành</h3>
+    <p><b>Kinh nghiệm:</b> 5 năm dẫn tour Hà Nội – Ninh Bình</p>
+    <p><b>Tour chuyên:</b> Văn hóa, ẩm thực, Các khu di tích lịch sử</p>
+    <button>Đặt lịch ngay</button>
+<div style="margin-top:20px">
+    <h3>Nguyễn minh</h3>
+    <p><b>Kinh nghiệm:</b>7 năm dẫn tour Hà Nội – Hải Phòng</p>
+    <p><b>Tour chuyên:</b> Văn hóa, ẩm thực, Các khu di tích lịch sử</p>
+    <button>Đặt lịch ngay</button>
+  </div>
+</section>
+
+<section id="tour">
+  <h2>Tour cá nhân của bạn</h2>
+  <p style="text-align:center">Tùy chỉnh kế hoạch du lịch theo sở thích – Tận hưởng chuyến đi trọn vẹn!</p>
+  <form class="tour-form">
+    <label>Địa điểm mong muốn:</label>
+    <input type="text" placeholder="Hà Nội, Hội An, Địa Đạo Củ Chi...">
+    <label>Ngân sách dự kiến:</label>
+    <input type="text" placeholder="10 triệu VND">
+    <label>Thời gian:</label>
+    <input type="date">
+    <label>Ghi chú thêm:</label>
+    <textarea placeholder="Yêu cầu đặc biệt, sở thích..."></textarea>
+    <button type="submit">Lập kế hoạch</button>
+  </form>
+</section>
+
+<section id="review">
+  <h2>Đánh giá sau tour du lịch của bạn</h2>
+  <form class="review-form">
+    <label>Tên tour:</label>
+    <input type="text" placeholder="Nhập tên tour bạn đã tham gia">
+    <label>Tên hướng dẫn viên:</label>
+    <input type="text" placeholder="Nhập tên hướng dẫn viên">
+    <label>Đánh giá sao:</label>
+    <div class="rating">
+      <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+      <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+      <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+      <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+      <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+    </div>
+    <label>Nhận xét của bạn:</label>
+    <textarea rows="5" placeholder="Viết cảm nhận của bạn sau chuyến đi..."></textarea>
+    <button type="submit">Gửi đánh giá</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 | Kết nối du lịch địa phương</p>
+  <p>Đia Chỉ: số 1,Phố Xốm Phú Lương,Thành Phố Hà Nội</p>
+  <p>Email: trongnguyen86464@gmail.com | Hotline:0383752822</p>
+  <p>
+    <a href="#home">Trang chủ</a> | 
+    <a href="#guides">Hướng dẫn viên</a> | 
+    <a href="#tour">Tour cá nhân</a> |
+    <a href="#review">Đánh giá sau tour</a>
+  </p>
+</footer>
+</body>
+</html>
