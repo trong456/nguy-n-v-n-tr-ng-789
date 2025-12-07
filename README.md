@@ -1,1 +1,1 @@
-lập trinh cơ bản
+LẬP TRÌNH CƠ BẢN
